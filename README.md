@@ -1,4 +1,4 @@
-# Qv2ray-config-for-TransparentProxy
+# Qv2ray-config-to-TransparentProxy
 
 Normal Qv2ray cannot get things done at some situations. Sometimes a transparent proxy is essential.
 
