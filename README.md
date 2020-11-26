@@ -2,7 +2,7 @@
 
 Normal Qv2ray cannot get things done at some situations. Sometimes a transparent proxy is essential.
 
-I successfully use this method built a transparent proxy: https://toutyrater.github.io/app/tproxy.html
+I successfully use this method to built a transparent proxy: https://toutyrater.github.io/app/tproxy.html
 
 Thanks, ToutyRater.
 
