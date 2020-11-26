@@ -11,7 +11,7 @@ This python script converts Qv2ray config file to fit the transparent proxy requ
 Here are some detail of my circumstance.
 
 1. Before install Qv2ray, I installed v2ray from this link https://github.com/v2fly/fhs-install-v2ray . 
-So I can "systemctl start v2ray" to use v2ray. But I cannot update the server by a subscription link. 
+So I can "systemctl start v2ray" to use v2ray. But I cannot update the servers by a subscription link. 
 It's very inconvenient to me.
 
 2. After installed Qv2ray, I disabled v2ray server from auto start.
@@ -42,6 +42,6 @@ I only use Qv2ray most of time.
         
         iptables -t mangle -X
         
-      If you already have items in mangle before 3 step c, don't do that. You have to clear those items that you added.
+      If you already have items in mangle before 3 step c, don't do that. You have to delete those items that you added, not the whole table.
       
     c. Start Qv2ray.
