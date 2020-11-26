@@ -17,6 +17,7 @@ It's very inconvenient to me.
 2. After installed Qv2ray, I disabled v2ray server from auto start.
 
     systemctl stop v2ray
+    
     systemctl disable v2ray
     
 I only use Qv2ray most of time. 
@@ -32,7 +33,10 @@ I only use Qv2ray most of time.
 
     a. Stop v2ray. (systemctl stop v2ray)
     b. Remove mangle table of iptables.
+    
         iptables -t mangle -F
+        
         iptables -t mangle -X
+        
       If you already have items in mangle before 3 step c, don't do that. You have to clear those items that you added.
     c. Start Qv2ray.
