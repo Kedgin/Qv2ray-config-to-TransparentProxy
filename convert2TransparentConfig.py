@@ -5,7 +5,7 @@ import getopt
 
 if len(sys.argv) == 1:
     print('use default file names')
-    source_config_file = '/home/kedgin/.config/qv2ray/generated/config.gen.json'
+    source_config_file = '/home/username/.config/qv2ray/generated/config.gen.json'
     dest_config_file = '/usr/local/etc/v2ray/config.json'
     template_config_file = 'template.json'
 else:
