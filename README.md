@@ -26,7 +26,23 @@ I only use Qv2ray most of time.
 
     a. Stop Qv2ray. (I use kill command in Linux, because it run in the background after I close the GUI.)
     
-    b. Conver the configuration. (sudo python3 convert2TransparentConfig.py)
+    b. Conver the configuration.
+    
+        sudo python3 convert2TransparentConfig.py -i qv2rayconfigfilename -o config.json -t template.json
+        
+        Then copy config.json to the directory which v2ray require.
+        
+        Or modify the default value in convert2TransparentConfig.py to fit your env:
+        
+            source_config_file = '/home/username/.config/qv2ray/generated/config.gen.json'
+                
+            dest_config_file = '/usr/local/etc/v2ray/config.json'
+            
+            template_config_file = 'template.json'
+
+        and execute the script without any parameter.
+        
+            sudo python3 convert2TransparentConfig.py
     
     c. Execute all commands in "iptables.cmd" file.
     
